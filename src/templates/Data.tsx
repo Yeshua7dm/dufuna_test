@@ -35,6 +35,7 @@ const Data = () => {
         backgroundColor: "rgba(75,192,192,0.4)",
         borderColor: "rgba(75,192,192,1)",
         cubicInterpolationMode: "monotone",
+        
       },
     ],
   });

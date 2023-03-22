@@ -7,6 +7,7 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PieChartOutlinedIcon from "@mui/icons-material/PieChartOutlined";
 import { NavLink } from "react-router-dom";
+import appLogo from "../assets/openPay.svg";
 
 const SideNav = styled.div`
   width: 175px;
@@ -23,7 +24,10 @@ const SideNav = styled.div`
     column-gap: 10px;
     text-decoration: none;
   }
-
+  header img {
+    border-radius: 50%;
+    height: 25px;
+  }
   .activeItem {
     background: #e5f1ff;
     border-radius: 4px;
@@ -77,8 +81,7 @@ const Sidebar = () => {
     <SideNav>
       <div>
         <header>
-          <img src={""} alt="logo" />
-          <h1>OpenPay</h1>
+          <img src={appLogo} alt="logo" />
         </header>
         <main>
           <div className="main">
